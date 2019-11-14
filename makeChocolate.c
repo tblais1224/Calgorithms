@@ -4,7 +4,7 @@
 int numberSmallBars(int smallBars, int bigBars, int kiloGoal)
 {
     kiloGoal = bigBars * 5 > kiloGoal ? kiloGoal % 5 : kiloGoal - bigBars * 5;
-    return kiloGoal > 0 && kiloGoal > smallBars ? -1 : kiloGoal;
+    return kiloGoal > smallBars ? -1 : kiloGoal;
 }
 
 int main(void)
